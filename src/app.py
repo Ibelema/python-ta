@@ -3,11 +3,14 @@ import os
 
 
 def prime(s):
-    # your code goes here
+    s = int(s)
+    if  s % 2 != 0:
+        return('it is a prime')
+    else:
+        return('it is not a prime')
 
 def solution(s):
     return prime(s)
-
 
 if __name__ == "__main__":
     if len(sys.argv) <= 1:
